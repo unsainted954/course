@@ -1,0 +1,88 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1{
+    text-align: center;
+    margin-top: 15px;
+}
+
+.dishes{
+    position: relative;
+    border: 3px solid black;
+    background-color: gray;
+}
+
+
+.dishes__title{
+    border: 3px solid black;
+    border-top: none;
+    border-right: none;
+    text-align: center;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.dishes__text{
+    margin-top: 40px;
+}
+
+.chicken{
+    background-color: pink;
+    margin: 0;
+    padding: 5px 10px 5px;
+}
+
+.beef{
+    background-color: maroon;
+    margin: 0;
+    padding: 5px 30px 5px;  
+    color: #fff;
+}
+
+.sushi{
+    background-color: greenyellow;
+    margin: 0;
+    padding: 5px 30px 5px;
+}
+
+@media (min-width: 992px) {
+    .col-lg-4{
+        float: left;
+        width: 33.33%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-md-6,
+    .col-md-12 {
+        float: left;
+    }
+    .col-md-6 {
+        width: 50%;
+    }
+    .col-md-12 {
+        margin-left: -10px;
+        width: 100%;
+    }
+    .name3 {
+        margin-right: 65px;
+        width: 100px;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+    .col-sm-12 {
+        float: left;
+        width: 100%;
+    }
+}
